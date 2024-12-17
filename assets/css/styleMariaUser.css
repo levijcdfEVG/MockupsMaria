@@ -1,0 +1,184 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+*{
+    font-family: "Irish Grover", system-ui; 
+}
+
+body{
+    background-image: url(../img/cespedFondo.jpg);
+    font-family: "Irish Grover", system-ui;
+}
+
+header h1{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+/* Configuración de "Inscripción al Ranking" */
+#rankingForm {
+    position: relative;
+    margin: 5% auto;
+    border-collapse: collapse;
+    width: 60%;
+    height: 50vh;
+    padding: 3% 0 3% 3%;
+    background-color: rgba(197, 227, 182, 0.499); /* Fondo semi-transparente */
+    color: #000;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;  
+}
+
+/* Formulario */
+form label {
+    font-size: 2.5rem;
+    margin-bottom: 1%;
+    color: black;
+    font-weight: bold;
+}
+
+form label:nth-of-type(2){
+    position: absolute;
+    top: 9vh;
+    right: 18vw;
+}
+
+form input[type="text"] {
+    width: 20%;
+    padding: 1.5%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    font-size: 1.5rem;
+    border: 2px solid #a2d79d;
+    border-radius: 5px;
+    background-color: #b0e7b8ea;
+}
+
+form input[type="text"]:nth-of-type(2){
+    position: absolute;
+    top: 6vh;
+    left: 45vw;
+}
+
+button {
+    position: absolute;
+    margin: 0;
+    width: 30%;
+    padding: 1%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    background-color: #b0e7b8ea;
+    color: #000;
+}
+
+form .enviar {
+    top: 40vh;
+    left: 20vw;
+}
+
+form .borrar {
+    top: 30vh;
+    left: 10vw;
+}
+
+form .cancelar {
+    top: 30vh;
+    left: 30vw;
+}
+
+form .enviar:hover, form .borrar:hover,  form .cancelar:hover, .volver:hover{
+    transform: scale(1.05);
+}
+
+.volver{
+    position: initial;  
+    display: block;
+    margin: 0 auto ;
+}
+
+
+/*****************************/
+/*    Media Queries Tablet   */
+/*****************************/
+@media (max-width: 810px) {
+
+#rankingForm {
+    width: 55%; 
+    height: 30vh;
+    padding: 6%; 
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+form label {
+    font-size: 2rem; 
+}
+
+form label:nth-of-type(1){
+    position: absolute;
+    top: 8vh;
+    left: 10vw;
+}
+
+form label:nth-of-type(2){
+    position: absolute;
+    top: 16vh;
+    left: 5.9vw;
+}
+
+form input[type="text"] {
+    width: 40%; 
+    font-size: 1.2rem; 
+    padding: 1.2%; 
+}
+
+form input[type="text"]:nth-of-type(1){
+    position: absolute;
+    top: 5vh;
+    left: 30vw;
+}
+
+form input[type="text"]:nth-of-type(2){
+    position: absolute;
+    top: 14vh;
+    left: 30vw;
+}
+
+button {
+    position: relative; 
+    width: 40%; 
+    margin: 0.5% auto; 
+    font-size: 1.3rem; 
+    padding: 1.2%; 
+}
+
+form .enviar {
+    top: 20vh;
+    left: 15vw;
+}
+
+form .borrar {
+    top: 18vh;
+    left: 8vw;
+}
+
+form .cancelar {
+    top: 18vh;
+    left: 5vw;
+}
+
+/* Botón "Volver" */
+.volver {
+    width: 40%; /* Adapta al ancho */
+    margin-top: 5%; /* Añade espacio arriba */
+}
+}
